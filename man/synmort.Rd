@@ -10,7 +10,7 @@ A data frame with 38,380 rows and the following columns:
 \item \code{age}: Single year of age, from 0 to 100.
 \item \code{sex}: \code{"Female"} or \code{"Male"}.
 \item \code{indig}: \code{"Indigenous"} or \code{"Non-Indigenous"}.
-\item region: `"New South Wales", "New South Wales",
+\item \code{region}: `"New South Wales", "New South Wales",
 "Northern Territory", "Queensland", "South Australia",
 "Western Australia".
 \item \code{time}: Calendar year, 2003 to 2021.

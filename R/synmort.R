@@ -31,7 +31,7 @@
 #' - `age`: Single year of age, from 0 to 100.
 #' - `sex`: `"Female"` or `"Male"`.
 #' - `indig`: `"Indigenous"` or `"Non-Indigenous"`.
-#' - region: `"New South Wales", "New South Wales",
+#' - `region`: `"New South Wales", "New South Wales",
 #'   "Northern Territory", "Queensland", "South Australia",
 #'   "Western Australia".
 #' - `time`: Calendar year, 2003 to 2021.

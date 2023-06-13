@@ -1,0 +1,46 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# synmort
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Synthetic data on deaths and population in Australia.
+
+
+## Installation
+
+``` r
+devtools::install_github("bayesiandemography/synmort")
+```
+
+## Description
+
+**synmort** contains a single data frame
+(called `synmort`) with synthetic data for Australia
+on population and deaths, disaggregated by age, sex,
+Indigenous status, state/territory and time. The methods used
+to split age groups and impute deaths have introduced substantial
+errors into the synthetic data, and they do *not* accurately
+measure actual mortality patterns in Australia.
+They are intended purely for developing code that can 
+subsequently be used on real data.
+
+```{r}
+library(synmort)
+head(synmort)
+```
+

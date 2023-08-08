@@ -3,7 +3,7 @@
 \docType{data}
 \name{synmort}
 \alias{synmort}
-\title{Synthetic mortality mortality for Australia}
+\title{Synthetic mortality data for Australia}
 \format{
 A data frame with 38,380 rows and the following columns:
 \itemize{

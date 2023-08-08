@@ -1,6 +1,5 @@
 
-
-#' Synthetic mortality mortality for Australia
+#' Synthetic mortality data for Australia
 #'
 #' A synthetic dataset of deaths and population
 #' created by splitting out tabulations published

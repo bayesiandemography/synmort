@@ -7,8 +7,10 @@ Maintainer: John Bryant <john@bayesiandemography.com>
 Description: Synthetic data on deaths and population, disaggregated
     by age, sex, Indigenous status, region, and time, 
     for Australia.
-sLicense: MIT + file LICENSE
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends:
+    R (>= 3.5.0)
 RoxygenNote: 7.2.3
 Roxygen: list(markdown = TRUE)

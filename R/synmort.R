@@ -6,7 +6,7 @@
 #' by the Australian Bureau of Statistics. The
 #' splitting method is very simple, and does not produce
 #' accurate rates or counts: the data should
-#' *not* be used for estimating actual mortality
+#' absolutely *not* be used for estimating actual mortality
 #' rates in Australia. The data should instead be
 #' use for developing code that will ultimately
 #' be used on real data, probably in
@@ -26,14 +26,13 @@
 #' data are included in the 'data-raw'
 #' folder for this package.
 #'
-#' @format A data frame with 38,380 rows and the following columns:
-#' - `age`: Single year of age, from 0 to 100.
-#' - `sex`: `"Female"` or `"Male"`.
-#' - `indig`: `"Indigenous"` or `"Non-Indigenous"`.
-#' - `region`: `"New South Wales", "New South Wales",
-#'   "Northern Territory", "Queensland", "South Australia",
-#'   "Western Australia".
-#' - `time`: Calendar year, 2003 to 2021.
-#' - `deaths`: Count of deaths.
-#' - `popn`: Count of population.
+#' @format A data frame with 5,918 rows and the following columns:
+#' - `age`: `"0"`, `"1-4"`, `"5-9"`, \dots, `"80-84"`, `"85+"`
+#' - `sex`: `"Female"`, `"Male"`
+#' - `indig`: `"Indigenous"`, `"Non-Indigenous"`
+#' - `state`: `"NSW"`, `"QLD"`, `"SA"`, `"WA"`, `"NT"`
+#' - `remote`: `"MC"`, `"IPOR"` `"RVR"`
+#' - `time`: Calendar year, 2016 to 2021
+#' - `deaths`: Count of deaths
+#' - `popn`: Count of population
 "synmort"

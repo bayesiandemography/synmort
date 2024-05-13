@@ -5,17 +5,16 @@
 \alias{synmort}
 \title{Synthetic mortality data for Australia}
 \format{
-A data frame with 38,380 rows and the following columns:
+A data frame with 5,918 rows and the following columns:
 \itemize{
-\item \code{age}: Single year of age, from 0 to 100.
-\item \code{sex}: \code{"Female"} or \code{"Male"}.
-\item \code{indig}: \code{"Indigenous"} or \code{"Non-Indigenous"}.
-\item \code{region}: `"New South Wales", "New South Wales",
-"Northern Territory", "Queensland", "South Australia",
-"Western Australia".
-\item \code{time}: Calendar year, 2003 to 2021.
-\item \code{deaths}: Count of deaths.
-\item \code{popn}: Count of population.
+\item \code{age}: \code{"0"}, \code{"1-4"}, \code{"5-9"}, \dots, \code{"80-84"}, \code{"85+"}
+\item \code{sex}: \code{"Female"}, \code{"Male"}
+\item \code{indig}: \code{"Indigenous"}, \code{"Non-Indigenous"}
+\item \code{state}: \code{"NSW"}, \code{"QLD"}, \code{"SA"}, \code{"WA"}, \code{"NT"}
+\item \code{remote}: \code{"MC"}, \code{"IPOR"} \code{"RVR"}
+\item \code{time}: Calendar year, 2016 to 2021
+\item \code{deaths}: Count of deaths
+\item \code{popn}: Count of population
 }
 }
 \usage{
@@ -27,7 +26,7 @@ created by splitting out tabulations published
 by the Australian Bureau of Statistics. The
 splitting method is very simple, and does not produce
 accurate rates or counts: the data should
-\emph{not} be used for estimating actual mortality
+absolutely \emph{not} be used for estimating actual mortality
 rates in Australia. The data should instead be
 use for developing code that will ultimately
 be used on real data, probably in

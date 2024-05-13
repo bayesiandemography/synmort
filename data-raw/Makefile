@@ -1,6 +1,7 @@
 
 MULT_MC=0.9
 MULT_RVR=1.1
+TIME_MIN=2016
 
 .PHONY: all
 all: ../data/synmort.rda
@@ -34,7 +35,7 @@ out/deaths.rds: src/deaths.R \
   out/deaths.rds \
   out/popn.rds \
   out/propn_remote.rds
-	Rscript $^ $@
+	Rscript $^ $@ --time_min=$(TIME_MIN)
 
 
 

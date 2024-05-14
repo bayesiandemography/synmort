@@ -9,7 +9,7 @@ A data frame with 5,918 rows and the following columns:
 \itemize{
 \item \code{age}: \code{"0"}, \code{"1-4"}, \code{"5-9"}, \dots, \code{"80-84"}, \code{"85+"}
 \item \code{sex}: \code{"Female"}, \code{"Male"}
-\item \code{indig}: \code{"Indigenous"}, \code{"Non-Indigenous"}
+\item \code{indig}: \code{"First Nations"}, \code{"Non-Indigenous"}
 \item \code{state}: \code{"NSW"}, \code{"QLD"}, \code{"SA"}, \code{"WA"}, \code{"NT"}
 \item \code{remote}: \code{"MC"}, \code{"IPOR"} \code{"RVR"}
 \item \code{time}: Calendar year, 2016 to 2021

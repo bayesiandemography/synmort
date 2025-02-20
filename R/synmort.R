@@ -31,8 +31,10 @@
 #' - `sex`: `"Female"`, `"Male"`
 #' - `indig`: `"Indigenous"`, `"Non-Indigenous"`
 #' - `state`: `"NSW"`, `"QLD"`, `"SA"`, `"WA"`, `"NT"`
-#' - `remote`: `"MC"`, `"IPOR"` `"RVR"`
+#' - `remote`: `"Major Cities"`, `"Inner Regional"`, `"Outer Regional"`,
+#'             `"Remote"`, `"Very Remote"`
 #' - `time`: Calendar year, 2016 to 2021
 #' - `deaths`: Count of deaths
 #' - `popn`: Count of population
+#' - `popn2`: Alternative count of population
 "synmort"

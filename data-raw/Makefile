@@ -1,6 +1,8 @@
 
-MULT_MC=0.9
-MULT_RVR=1.1
+MULT_MC = 0.9
+MULT_R = 1.1
+MULT_VR = 1.2
+TIME_MIN = 2016
 
 .PHONY: all
 all: ../data/synmort.rda
@@ -18,7 +20,7 @@ out/all_data.rds: src/all_data.R \
 
 out/rate.rds: src/rate.R \
   out/all_data.rds
-	Rscript $^ $@ --mult_mc=$(MULT_MC) --mult_rvr=$(MULT_RVR)
+	Rscript $^ $@ --mult_mc=$(MULT_MC) --mult_r=$(MULT_R) --mult_vr=$(MULT_VR)
 
 out/popn.rds: src/popn.R \
   out/all_data.rds \
@@ -34,7 +36,7 @@ out/deaths.rds: src/deaths.R \
   out/deaths.rds \
   out/popn.rds \
   out/propn_remote.rds
-	Rscript $^ $@
+	Rscript $^ $@ --time_min=$(TIME_MIN)
 
 
 

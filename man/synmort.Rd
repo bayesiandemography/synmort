@@ -11,10 +11,12 @@ A data frame with 5,918 rows and the following columns:
 \item \code{sex}: \code{"Female"}, \code{"Male"}
 \item \code{indig}: \code{"Indigenous"}, \code{"Non-Indigenous"}
 \item \code{state}: \code{"NSW"}, \code{"QLD"}, \code{"SA"}, \code{"WA"}, \code{"NT"}
-\item \code{remote}: \code{"MC"}, \code{"IPOR"} \code{"RVR"}
+\item \code{remote}: \code{"Major Cities"}, \code{"Inner Regional"}, \code{"Outer Regional"},
+\code{"Remote"}, \code{"Very Remote"}
 \item \code{time}: Calendar year, 2016 to 2021
 \item \code{deaths}: Count of deaths
 \item \code{popn}: Count of population
+\item \code{popn2}: Alternative count of population
 }
 }
 \usage{

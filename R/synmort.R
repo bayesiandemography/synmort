@@ -29,7 +29,7 @@
 #' @format A data frame with 5,918 rows and the following columns:
 #' - `age`: `"0"`, `"1-4"`, `"5-9"`, \dots, `"80-84"`, `"85+"`
 #' - `sex`: `"Female"`, `"Male"`
-#' - `indig`: `"Indigenous"`, `"Non-Indigenous"`
+#' - `indig`: `"First Nations"`, `"Non-Indigenous"`
 #' - `state`: `"NSW"`, `"QLD"`, `"SA"`, `"WA"`, `"NT"`
 #' - `remote`: `"Major Cities"`, `"Inner Regional"`, `"Outer Regional"`,
 #'             `"Remote"`, `"Very Remote"`

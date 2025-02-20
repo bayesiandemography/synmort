@@ -16,8 +16,7 @@ keep <- propn_remote |>
 
 synmort <- inner_join(deaths, popn,
                       by = c("age", "sex", "indig", "state", "remote", "time")) |>
-  arrange(state, indig, time, sex, age) |>
-  mutate(popn = round(popn)) |>
+  arrange(state, remote, indig, time, sex, age) |>
   mutate(age = ifelse(age == 100, "100+", age),
          age = set_age_open(age, lower = 85),
          age = combine_age(age, to = "lt"),

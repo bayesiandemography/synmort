@@ -7,7 +7,7 @@ library(tidyr)
 cmd_assign(deaths = "out/deaths.rds",
            popn = "out/popn.rds",
            propn_remote = "out/propn_remote.rds",
-           time_min = 2016,
+           time_min = 2017,
            .out = "out/synmort.rda")
 
 keep <- propn_remote |>

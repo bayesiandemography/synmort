@@ -2,7 +2,7 @@
 MULT_MC = 0.9
 MULT_R = 1.1
 MULT_VR = 1.2
-TIME_MIN = 2016
+TIME_MIN = 2017
 
 .PHONY: all
 all: ../data/synmort.rda

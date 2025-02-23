@@ -25,13 +25,7 @@ synmort <- inner_join(deaths, popn,
   summarise(deaths = sum(deaths), popn = sum(popn),
             .groups = "drop") |>
   inner_join(keep, by = c("state", "remote")) |>
-  mutate(state = factor(state,
-                        levels = c("New South Wales",
-                                   "Queensland",
-                                   "South Australia",
-                                   "Western Australia",
-                                   "Northern Territory"),
-                        labels = c("NSW", "QLD", "SA", "WA", "NT"))) |>
+  mutate(state = factor(state, levels = c("NSW", "Vic", "QLD", "SA", "WA", "Tas", "NT", "ACT"))) |>
   mutate(popn2 = case_when(remote == "MC" ~ 1.02 * popn,
                            remote == "IR" ~ 1.05 * popn,
                            remote == "OR" ~ 1.07 * popn,
@@ -45,9 +39,11 @@ synmort <- inner_join(deaths, popn,
                                     "Outer Regional",
                                     "Remote",
                                     "Very Remote"))) |>
+  mutate(time = time + 1) |>
   filter(keep) |>
   select(-keep) |>
   filter(time >= time_min) |>
+  arrange(state, remote) |>
   tibble()
 
 save(synmort, file = .out)

@@ -33,6 +33,23 @@ rate <- all_data |>
   pivot_longer(c(MC, IR, OR, R, VR),
                names_to = "remote",
                values_to = "rate")
+
+act <- rate |>
+  filter(state == "NSW") |>
+  mutate(state = "ACT") |>
+  mutate(rate = 0.92 * rate)
+
+tas <- rate |>
+  filter(state == "NSW") |>
+  mutate(state = "Tas") |>
+  mutate(rate = 1.01 * rate)
+
+vic <- rate |>
+  filter(state == "NSW") |>
+  mutate(state = "Vic") |>
+  mutate(rate = 0.95 * rate)
+
+rate <- bind_rows(rate, act, tas, vic)
     
 saveRDS(rate, file = .out)
 

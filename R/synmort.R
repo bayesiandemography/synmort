@@ -26,14 +26,14 @@
 #' data are included in the 'data-raw'
 #' folder for this package.
 #'
-#' @format A data frame with 5,918 rows and the following columns:
+#' @format A data frame with 13,224 rows and the following columns:
 #' - `age`: `"0"`, `"1-4"`, `"5-9"`, \dots, `"80-84"`, `"85+"`
 #' - `sex`: `"Female"`, `"Male"`
 #' - `indig`: `"First Nations"`, `"Non-Indigenous"`
-#' - `state`: `"NSW"`, `"QLD"`, `"SA"`, `"WA"`, `"NT"`
+#' - `state`: `"NSW"`, `"Vic", `"QLD"`, `"SA"`, `"WA"`, `"Tas"`, `"NT"` `"ACT"`
 #' - `remote`: `"Major Cities"`, `"Inner Regional"`, `"Outer Regional"`,
 #'             `"Remote"`, `"Very Remote"`
-#' - `time`: Calendar year, 2016 to 2021
+#' - `time`: Calendar year, 2017 to 2022
 #' - `deaths`: Count of deaths
 #' - `popn`: Count of population
 #' - `popn2`: Alternative count of population

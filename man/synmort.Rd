@@ -5,15 +5,15 @@
 \alias{synmort}
 \title{Synthetic mortality data for Australia}
 \format{
-A data frame with 5,918 rows and the following columns:
+A data frame with 13,224 rows and the following columns:
 \itemize{
 \item \code{age}: \code{"0"}, \code{"1-4"}, \code{"5-9"}, \dots, \code{"80-84"}, \code{"85+"}
 \item \code{sex}: \code{"Female"}, \code{"Male"}
 \item \code{indig}: \code{"First Nations"}, \code{"Non-Indigenous"}
-\item \code{state}: \code{"NSW"}, \code{"QLD"}, \code{"SA"}, \code{"WA"}, \code{"NT"}
+\item \code{state}: \code{"NSW"}, \verb{"Vic", }"QLD"\verb{, }"SA"\verb{, }"WA"\verb{, }"Tas"\verb{, }"NT"\verb{ }"ACT"`
 \item \code{remote}: \code{"Major Cities"}, \code{"Inner Regional"}, \code{"Outer Regional"},
 \code{"Remote"}, \code{"Very Remote"}
-\item \code{time}: Calendar year, 2016 to 2021
+\item \code{time}: Calendar year, 2017 to 2022
 \item \code{deaths}: Count of deaths
 \item \code{popn}: Count of population
 \item \code{popn2}: Alternative count of population

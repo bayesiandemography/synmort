@@ -51,17 +51,17 @@ popn <- popn_distn |>
 act <- popn |>
   filter(state == "NSW") |>
   mutate(state = "ACT") |>
-  mutate(popn = round(0.04 * popn))
+  mutate(popn = 0.04 * popn)
 
 tas <- popn |>
   filter(state == "NSW") |>
   mutate(state = "Tas") |>
-  mutate(popn = round(0.06 * popn))
+  mutate(popn = 0.06 * popn)
 
 vic <- popn |>
   filter(state == "NSW") |>
   mutate(state = "Vic") |>
-  mutate(popn = round(0.82 * popn))
+  mutate(popn = 0.82 * popn)
 
 popn <- bind_rows(popn, act, tas, vic)
 

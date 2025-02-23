@@ -30,8 +30,7 @@ synmort <- inner_join(deaths, popn,
                            remote == "IR" ~ 1.05 * popn,
                            remote == "OR" ~ 1.07 * popn,
                            remote == "R" ~ 1.1 * popn,
-                           TRUE ~ 1.2 * popn),
-         popn2 = round(popn2)) |>
+                           TRUE ~ 1.2 * popn)) |>
   mutate(remote = factor(remote,
                          levels = c("MC", "IR", "OR", "R", "VR"),
                          labels = c("Major Cities",
